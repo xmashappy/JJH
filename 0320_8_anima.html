@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+            border-radius: 60% 30% 50% 50% / 30% 40% 52% 60%;
+        }
+        p {
+            width: 0;
+            height: 0;
+            border-top: 10px solid #ccc;
+            border-right: 10px solid transparent;
+            border-bottom: none;
+            border-left: 10px solid transparent;
+        }
+        p:nth-of-type(2) {
+            width: 0;
+            height: 0;
+            border-top: none;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #ccc;
+            border-left: 10px solid transparent;
+        }
+        p:nth-of-type(3) {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-right: 10px solid #ccc;
+            border-bottom: 10px solid transparent;
+            border-left: none;
+        }
+        p:nth-of-type(4) {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-right: none;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid #ccc;
+        }
+        p:nth-of-type(5) {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-right: none;
+            border-bottom: 10px solid transparent;
+            border-left: 30px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</body>
+</html>

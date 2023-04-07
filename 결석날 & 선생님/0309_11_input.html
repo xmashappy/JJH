@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        input {
+            display: none;
+        }
+        .tabcon {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            display: none;
+        }
+        #con1 {
+            background: red;
+        }
+        #con2 {
+            background: green;
+        }
+        #con3 {
+            background: blue;
+        }
+        #con4 {
+            background: orange;
+        }
+        label {
+            display: block;
+            float: left;
+            width: 25%;
+            padding: 10px 0;
+            text-align: center;
+        }
+        label:first-of-type {
+            background: red;
+        }
+        label:nth-of-type(2) {
+            background: green;
+        }
+        label:nth-of-type(3) {
+            background: blue;
+        }
+        label:nth-of-type(4) {
+            background: orange;
+        }
+        #one:checked ~ #con1 {
+            display: block;
+        }
+        #two:checked ~ #con2 {
+            display: block;
+        }
+        #three:checked ~ #con3 {
+            display: block;
+        }
+        #four:checked ~ #con4 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="con" id="one" checked>
+    <input type="radio" name="con" id="two">
+    <input type="radio" name="con" id="three">
+    <input type="radio" name="con" id="four">
+    <div id="con1" class="tabcon">
+        <h1>content1</h1>
+    </div>
+    <div id="con2" class="tabcon">
+        <h1>content2</h1>
+    </div>
+    <div id="con3" class="tabcon">
+        <h1>content3</h1>
+    </div>
+    <div id="con4" class="tabcon">
+        <h1>content4</h1>
+    </div>
+    <label for="one">content1</label>
+    <label for="two">content2</label>
+    <label for="three">content3</label>
+    <label for="four">content4</label>
+</body>
+</html>

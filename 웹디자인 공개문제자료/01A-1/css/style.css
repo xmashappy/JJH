@@ -1,0 +1,220 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+body {
+    font: 16px Arial, 돋움, Dotum, sans-serif;
+}
+#wrap {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    height: 100px;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+header .menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .menu > ul {
+    width: 700px;
+    display: flex;
+    height: 40px;
+    margin: 20px 20px 0 0;
+}
+header .menu > ul >li {
+    flex: 1 1 25%;
+}
+header .menu > ul > li > a {
+    display: block;
+    border: 1px solid #333;
+    text-align: center;
+    border-left: none;
+    line-height: 40px;
+}
+header .menu > ul > li:first-child > a{
+    border-left: 1px solid #333;
+}
+header .menu li ul li a {
+    display: block;
+    text-align: center;
+    line-height: 30px;
+}
+header .menu > ul > li:first-child li a {
+    border-left: 1px solid #333;
+}
+header .menu > ul > li:last-child li a {
+    border-right: 1px solid #333;
+}
+header .menu ul > li:hover > a,
+header .menu ul > li > a:hover {
+    background: #000;
+    color: #fff;
+}
+header .menu .sub {
+    position: relative;
+    z-index: 1;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    transition: height 0.5s;
+}
+header .menu > ul:hover .sub {
+    height: 120px;
+    border-bottom: 1px solid #333;
+} 
+.visual {
+    height: 300px;
+    background: #af8484;
+}
+.col {
+    height: 200px;
+    display: flex;
+}
+.col > div {
+    flex: 1 1 30%;
+}
+.col .left {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.col .notice {
+    width: 90%; 
+}
+.col .notice input[type=radio] {
+    display: none;
+}
+.col .notice .btn {
+    position: relative;
+    top: 1px;
+    display: flex;
+    z-index: 1;
+}
+.col .notice .btn li {
+    width: 100px;
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 40px;
+}
+.col .notice .btn li label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.col .notice .con {
+    border: 1px solid #333;
+    width: 100%;
+    height: 140px;
+}
+.col .notice #notice:checked ~ .btn li:first-child {
+    background: #fff;
+    border-bottom: none;
+    border-right: none;
+}
+.col .notice #notice:checked ~ .btn li:last-child {
+    background: #ccc;
+}
+.col .notice #gallery:checked ~ .btn li:last-child {
+    background: #fff;
+    border-bottom: none;
+    border-left: none;
+}
+.col .notice #gallery:checked ~ .btn li:first-child {
+    background: #ccc;
+}
+.col .notice .con > li {
+    display: none;
+}
+.con .ncon li a:hover {
+    text-decoration: underline;
+}
+.con .ncon li span {
+    display: inline-block;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.col .notice #notice:checked ~ .con .ncon,
+.col .notice #gallery:checked ~ .con .gcon {
+    display: block;
+}
+.gcon ul {
+    display: flex;
+    height: 140px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.col .notice .gcon img {
+    width: 100px;
+}
+.col .banner {
+    background: #d19797;
+}
+.col .go {
+    background: #ed8484;
+}
+footer {
+    display: flex;
+    height: 100px;
+}
+footer .logo {
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+footer .copyright {
+    flex-grow: 1;
+    background: #bbb;
+}
+footer .sns {
+    width: 200px;
+    background: #ccc;
+}
+#popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0,0,0,0.5); */
+    z-index: 2;
+}
+#popup .pop {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#popup .pop .con {
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    border: 1px solid #000;
+    padding: 10px;
+}
+#popup:target {
+    display: block;
+}

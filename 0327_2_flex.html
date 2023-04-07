@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .flex-container {
+        display: flex;
+        align-items: flex-start;
+        background: #ccc;
+        width: 1200px;
+        height: 600px;
+       } 
+       .item {
+        background: #ddd;
+        border: 1px solid #000;
+        margin: 100px;
+       }
+       .item img {
+        width: 150px;
+       }
+       .a {
+        width: 100px; /*더 큰 자식요소가 들어와도 상관없이 100px값을 유지*/
+       }
+       .b {
+        flex-basis: 100px; /*컨텐츠(자식요소) 너비에 따라서 유연하게 변경*/
+       }
+       /*flex-basis는 좀 더 유연한 반면 width는 고정값(강제)*/
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item a">
+            <img src="images/photo1.jpg" alt="photo1">
+        </div>
+        <div class="item b">
+            <img src="images/photo2.jpg" alt="photo2">
+        </div>
+    </div>
+</body>
+</html>

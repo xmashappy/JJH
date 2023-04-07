@@ -1,0 +1,141 @@
+@charset "UTF-8";
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: block;
+}
+.clearfix::after {
+    clear: both;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+body {
+    font: 16px Arial, "맑은 고딕", sans-serif;
+    background: #161616;
+}
+.top {
+    background: #666;
+}
+.top_menu {
+    width: 1000px;
+    margin: 0 auto;
+}
+.top_menu ul {
+    float: right;
+}
+.top_menu ul li {
+    float: left;
+    line-height: 40px;
+    margin-left: 10px;
+}
+.top_menu ul li a {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.top_menu ul li input {
+    padding: 5px;
+}
+.top_menu ul li img {
+    vertical-align: middle;
+}
+.menu {
+    width: 1000px;
+    margin: 0 auto;
+}
+.menu .logo {
+    float: left;
+}
+.menu ul {
+    float: right;
+}
+.menu ul li {
+    float: left;
+    line-height: 70px;
+    margin-left: 20px;
+}
+.menu nav ul li a {
+    text-transform: uppercase;
+}
+.visual {
+    background: #999;
+    height: 400px;
+}
+.visual .main {
+    width: 1000px;
+    margin: 0 auto;
+}
+ul.banner {
+    width: 1000px;
+    margin: 20px auto;
+}
+ul.banner li {
+    width: 235px;
+    float: left;
+    margin-left: 20px;
+    border: 2px dashed transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+ul.banner li:first-child {
+    margin-left: 0;
+}
+ul.banner li img {
+    border: 2px dashed transparent;
+}
+ul.banner li img:hover {
+    border: 2px dashed #fc0;
+}
+.event {
+    width: 1000px;
+    margin: 0 auto;
+}
+.event > div {
+    float: left;
+    width: 50%;
+}
+.right {
+    padding: 30px 0;
+}
+.right h2, .right ul {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+}
+.right ul strong {
+    margin-right: 10px;
+}
+.right ul span {
+    font-size: 14px;
+    margin-left: 10px;
+}
+/* .right ul li {
+    line-height: 30px;
+} */
+footer {
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+footer .foot {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+}
+footer .foot ul li {
+    display: inline-block;
+}
+footer .foot ul li a:hover {
+    text-decoration: underline;
+}
+footer .foot p {
+    color: #fff;
+}

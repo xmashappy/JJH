@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        p, span {
+            width: 200px;
+            border-width: 1px;
+            border-color: #8ac007;
+        }
+        p#solid, span.solid {
+            border-style: solid;
+        }
+        #dotted {
+            border-style: dotted;
+        }
+        #dashed {
+            border-style: dashed;
+        }
+        #double {
+            border-style: double;
+        }
+        #mix {
+            border-style: solid dotted dashed double;
+        }
+        #groove {
+            border-width: 5px;
+            border-style: groove;
+        }
+        #ridge {
+            border-width: 5px;
+            border-style: ridge;
+        }
+        #inset {
+            border-width: 5px;
+            border-style: inset;
+        }
+        #outset {
+            border-width: 5px;
+            border-style: outset;
+        }
+        #none {
+            border-style: none;
+        }
+    </style>
+</head>
+<body>
+    <p id="solid">a solid border</p>
+    <p id="dotted">a dotted border</p>
+    <p id="dashed">a dashed border</p>
+    <p id="double">a double border</p>
+    <p id="mix">a mix border</p>
+    <p id="groove">a groove border</p>
+    <p id="ridge">a ridge border</p>
+    <p id="inset">a inset border</p>
+    <p id="outset">a outset border</p>
+    <p id="none">a none border</p>
+    <span class="solid">a solid border</span>
+</body>
+</html>

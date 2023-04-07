@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div svg {
+            stroke-linecap: square;
+            stroke-dasharray: 400;
+            stroke-dashoffset: 400;
+            animation: ani 1s infinite;
+        }
+        @keyframes ani {
+            to {stroke-dashoffset: 100;}
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <svg width="400" height="400">
+            <rect x="10" y="10" width="300" height="100" style="fill:none;stroke-width:3;stroke:rgb(0,0,0)" />
+        </svg>
+        <svg width="400" height="400">
+            <circle cx="50%" cy="50%" r="100" style="fill:none;stroke-width:3;stroke:rgb(0,0,0)" />
+        </svg>
+    </div>
+    <svg height="80" width="300">
+        <g fill="none" stroke="black" stroke-width="4">
+        <path stroke-dasharray="5" d="M5 20 l215 0" />
+        <path stroke-dasharray="10" d="M5 40 l215 0" />
+        <path stroke-dasharray="20,10,5,5,5,10" d="M5 60 l215 0" />
+        </g>
+    </svg>
+</body>
+</html>

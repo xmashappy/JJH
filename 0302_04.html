@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div.a {
+            width: 600px;
+            background: #ccc;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: left;
+        }
+        div.b {
+            margin: 10px auto;
+            width: 600px;
+            background: #8ac007;
+            text-align: left;
+            float: right;
+        } */
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+            background: #f00;
+            overflow: hidden;
+        }
+        .wrap > div {
+            width: 40%;
+            float: left;
+            padding: 0 20px;
+        }
+        .wrap > div:first-child {
+            background: #ccc;
+            border-radius: 50px;
+        }
+        .wrap > div:last-child {
+            background: #8ac007;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus consectetur consequat. Maecenas mollis vitae dolor at rutrum. Vivamus tristique pulvinar pulvinar. Nullam et ante lacinia, egestas lorem et, interdum mi. Etiam auctor libero metus, non hendrerit lorem hendrerit molestie. Ut a massa vitae tortor tincidunt tempor non nec neque. Integer dapibus felis ornare sem dictum lobortis. Quisque commodo auctor ipsum, at tempus elit ultrices vitae. Quisque lacinia mauris sit amet massa elementum, sit amet ultrices massa scelerisque. Nullam pellentesque quam a erat consequat vulputate.
+            </p>
+        </div>
+        <div>
+            <p>Cras vulputate lorem sit amet tristique eleifend. In vulputate, nunc vel mattis elementum, mauris massa vestibulum purus, vel laoreet dolor nisl at odio. Morbi nec congue massa, quis luctus ante. Pellentesque eget feugiat ipsum. Nunc gravida sem eget rutrum vehicula. Suspendisse egestas non neque vel facilisis. Nunc placerat justo at quam tincidunt, faucibus imperdiet nisl auctor. Nullam fringilla magna vel nulla porttitor, id imperdiet nisl porttitor. Etiam pellentesque luctus neque porta aliquet. Nam mauris mauris, commodo id urna id, malesuada tincidunt odio. Morbi eleifend, magna quis faucibus hendrerit, metus sem efficitur sapien, a sodales lorem sem sit amet nulla. Proin maximus pharetra ligula posuere tempor. Sed pharetra interdum aliquet. Proin tellus diam, fermentum mattis turpis ac, ultricies venenatis risus. Cras lacinia pellentesque augue non cursus.Mauris dictum nunc ex, quis dictum nibh pretium in. Morbi porta eros vitae nulla elementum placerat. Cras et ultricies lacus, finibus molestie metus. Nulla gravida vestibulum tempus. Nam suscipit volutpat augue, nec ultrices augue. In ac lectus dapibus, pellentesque nunc eget, tincidunt neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+        </div>
+    </div>   
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        svg {
+            position: relative;
+            left: 100px;
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+            background: #ccc;
+        }
+        .st0 {fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+    </style>
+</head>
+<body>
+    <svg id="svg1">
+        <rect style="x:100; y:100; width: 100; height:100; fill:#aaa; stroke:#f00; stroke-width:2;" />
+        <rect x="500"; y="500"; width="100" height="100" />
+    </svg>
+    <svg style="height:210; width:500;">
+        <polygon points="200,10 250,190 160,210" 
+        style="fill:lime;stroke:purple;stroke-width:1" />
+    </svg>
+    <svg height="250" width="500">
+        <polygon points="10,10 300,10 300,250 10,250" 
+        style="fill:lime;stroke:purple;stroke-width:1" />
+    </svg>
+    <svg>
+        <polygon points="40,10 300,10 340,50 340,200 300,240 40,240 0,200 0,50;" 
+        style="fill:lime;stroke:purple;stroke-width:1" />
+    </svg>
+    <svg height="200" width="500">
+        <polyline points="20,20 40,25 60,40 80,120 120,140 200,180"
+        style="fill:none;stroke:black;stroke-width:3" />
+    </svg>
+    <svg>
+        <path d="m10 0 l100 0 l0 200 l-100 0 Z" />
+    </svg>
+    <svg>
+        <polygon class="st0" points="151.06,109.18 97.62,145.37 39.56,117.19 34.94,52.82 88.38,16.63 146.44,44.81 "/>
+    </svg>
+    <svg height="30" width="200">
+        <circle cx="200" cy="200" r="100" fill="none" stroke="#000" />
+        <text x="170" y="200" fill="red">I love<tspan x="170" y="-170">SVG!</tspan></text>
+    </svg>
+</body>
+</html>

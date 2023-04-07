@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            position: relative;
+            width: 109px;
+            height: 109px;
+        }
+        li p {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 109px;
+            background: #fff;
+            /* display: none; */
+            opacity: 0;
+            transition: 1s;
+        }
+        li:hover p {
+            /* display: block; */
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <img src="images/icon1.png" alt="about">
+            <p>ABOUT</p>
+        </li>
+    </ul>
+</body>
+</html>

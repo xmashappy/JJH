@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        input {
+            display: none;
+        }
+        ul {
+            list-style: none;
+        }
+        .btn {
+            position: absolute;
+            z-index: 1;
+        }
+        .btn li {
+            float: left;
+            width: 100px;
+            height: 40px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 40px;
+            background: #ccc;
+        }
+        .btn li:first-child {
+            margin-left: 10px;
+        }
+        .con {
+            position: relative;
+            width: 350px;
+            height: 150px;
+            top: 41px;
+            border: 1px solid #000;
+        }
+        .con table {
+            table-layout: fixed;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .con table td:first-child {
+            width: 250px;
+            padding-right: 10px;
+            padding: 3px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 12px;
+        }
+        .con table td:last-child {
+            width: 250px;
+            padding-right: 10px;
+            font-size: 12px;
+        }
+        #notice:checked ~ .btn li:first-child {
+            background: #fff;
+            border-bottom-color: #fff;
+            border-right: none;
+        }
+        #notice:checked ~ .con .second {
+            display: none;
+        }
+        #gallery:checked ~ .btn li:last-child {
+            background: #fff;
+            border-left: none;
+            border-bottom-color: #fff;
+        }
+        #gallery:checked ~ .con .first {
+            display: none;
+        }
+        img {
+            width: 33.33%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="board" id="notice" checked>
+    <input type="radio" name="board" id="gallery">
+    <ul class="btn">
+        <li><label for="notice">공지사항</label></li>
+        <li><label for="gallery">갤러리</label></li>
+    </ul>
+    <ul class="con">
+        <li class="first">
+            <table>
+                <tr>
+                    <td>애스크로 서비스 변경 약관을 확인하세요</td>
+                    <td> 2019-10-10</td>
+                </tr>
+                <tr>
+                    <td>배송 택배사 변경 및 배송방식 변경에 따른 공지</td>
+                    <td> 2019-10-10</td>
+                </tr>
+                <tr>
+                    <td>여름 이월상품 정리 세일 안내</td>
+                    <td> 2019-10-10</td>
+                </tr>
+                <tr>
+                    <td>여름 바캉스 상품 정리 세일 안내</td>
+                    <td> 2019-10-10</td>
+                </tr>
+                <tr>
+                    <td>반품 및 교환 조건 변경 공지 </td>
+                    <td> 2019-10-10</td>
+                </tr>
+                <tr>
+                    <td>상품별 사이즈표 보는 방법과 치수 공지</td>
+                    <td> 2019-10-10</td>
+                </tr>
+            </table>
+        </li>
+        <li class="second">
+            <img src="./웹디자인 공개문제자료/01A-1/Contents/갤러리/gallery01.gif" alt="gallery01">
+            <img src="./웹디자인 공개문제자료/01A-1/Contents/갤러리/gallery02.gif" alt="gallery02">
+            <img src="./웹디자인 공개문제자료/01A-1/Contents/갤러리/gallery03.gif" alt="gallery03">
+        </li>
+    </ul>
+</body>
+</html>

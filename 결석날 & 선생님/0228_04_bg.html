@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            height: 1000px;
+            border: 10px solid rgba(255,0,0,0.3);
+            padding: 20px;
+        }
+        .bg1 {
+            /* background-image: url(images/img_flwr.gif); */
+            background-color: #ccc;
+            /* background-image: url(https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png); */
+            background-image: url(images/photo1.jpg);
+            /* background-position: 50% 50%; */
+            /* background-position: left top; */
+            background-position: left bottom;
+            /*가로 left center right 세로 top center bottom*/
+            /* background-size: 100%; */
+            /* background-size: cover; */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-origin: padding-box; /*image*/
+            background-clip: border-box;/*color or image*/
+            background-attachment: fixed;
+           /* background: color image position/size repeat origin clip attachment;*/
+            
+        }
+    </style>
+</head>
+<body>
+    <p class="bg1"></p>
+</body>
+</html>

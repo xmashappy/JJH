@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .over {
+            display: inline-block;
+            border-bottom: 1px dotted #000;
+            cursor: pointer;
+        }
+        .text {
+            position: relative;
+            top: 30px;
+            left: -120px;
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            border-radius: 5px;
+            padding: 5px 20px;
+            visibility: hidden;
+        }
+        .over:hover + .text {
+            visibility: visible;
+        }
+        .out {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted #000;
+            cursor: pointer;
+        }
+        .in {
+            position: absolute;
+            top: 30px;
+            left: 0px;
+            width: 100px;
+            background: #000;
+            color: #fff;
+            border-radius: 5px;
+            padding: 5px 20px;
+            text-align: center;
+            visibility: hidden;
+        }
+        .out:hover .in{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <p class="over">Mouse over me</p>
+    <p class="text">Tooltip text</p>
+    <div>
+        <div class="out">Mouse over me
+            <div class="in">Tooltip text</div>
+        </div>
+    </div>
+    <div>다음 내용입니다.</div>
+</body>
+</html>

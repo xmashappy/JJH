@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .out {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            perspective: 600px;
+         }
+         .in {
+            position: absolute;
+            background: #f00;
+            transform: rotateX(60deg);
+            padding: 50px;
+            transform-style: preserve-3d;
+         }
+         .child {
+            position: absolute;
+            padding: 50px;
+            background: yellow;
+            border: 1px solid #000;
+            transform: rotateY(60deg);
+         }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="in">Hello
+            <div class="child">yellow</div>
+        </div>
+    </div>
+</body>
+</html>

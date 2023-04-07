@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background: #f00;
+            z-index: 2;
+        }
+        .b {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background: #0f0;
+            left: 300px;
+            top: -100px;
+            z-index: -1;
+        }
+        .c {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: #00f;
+            left: 500px;
+            top: -150px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul { 
+            list-style: none;
+        }
+        a { 
+            text-decoration: none; color: #0196e3;
+        }
+        body{
+            font: 14px Arial, sans-serif;
+            color: #666;
+            background: #000;
+        }
+        h1{
+            padding: 60px 0 20px;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            font-weight: normal;
+        }
+        h2 {
+            text-align: center;
+            font-weight: normal;
+        }
+        #nav {
+            width: 40px;
+            margin: 80px auto;
+            position: relative;
+        }
+        #nav li {
+            padding: 2px;
+            width: 40px;
+            height: 38px;
+        }
+        #nav li a {
+            display: block;
+            position: relative;
+            width: 38px;
+            height: 38px;
+            background: url(images/navigation.jpg);
+        }
+        #nav span {
+            overflow: hidden;
+            width: 0;
+            position: absolute;
+            left: 38px;
+            line-height: 38px;
+            transition: all 0.2s;
+        }
+        #nav li a:hover span {
+            width: auto;
+            overflow: visible;
+            padding: 0 20px;
+        } 
+    </style>
+</head>
+<body>
+    <h1>CSS3 Navigation Menu</h1>
+    <h2><a href="#">Read the tutorial on Tutorialzine</a></h2>
+    <ul id="nav">
+        <li><a href="#" class="home"><span>Home</span></a></li>
+        <li><a href="#" class="about"><span>About</span></a></li>
+        <li><a href="#" class="services"><span>Services</span></a></li>
+        <li><a href="#" class="portfolio"><span>Portfolio</span></a></li>
+        <li><a href="#" class="contact"><span>Contact</span></a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        body {
+            font: 1em Arial, 돋움, Dotum, sans-serif;
+        }
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            position: relative;
+            height: 100px;
+            background: #ccc;
+        }
+        .logo, nav#gnb {
+            float: left;
+        }
+        .logo {
+            width: 200px;
+        }
+        nav#gnb {
+            width: 1000px;
+        }
+        nav#gnb > ul {
+            float: right;
+            width: 700px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+        nav#gnb > ul > li {
+            position: relative;
+            float: left;
+            width: 25%;
+        }
+        nav#gnb > ul > li > a {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: 1px solid #000;
+            border-left: none;
+        }nav#gnb > ul > li:first-child > a {
+            border-left: 1px solid #000;
+        }
+        nav#lnb {
+            display: none;
+            position: absolute;
+            width: 100%;
+            background: #000;
+            left: 0;
+            top: 60px;
+        }
+        nav#lnb > ul {
+            float: right;
+            width: 700px;
+            margin-right: 20px;
+        }
+        nav#lnb > ul >li {
+            float: left;
+            width: 25%;
+        }
+        nav#lnb li a {
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+        }
+        nav#gnb li:hover a {
+            background: #000;
+            color: #fff;
+        }
+        nav#lnb li:hover > a {
+            background: #fff;
+            color: #000;
+        }
+        nav#gnb:hover ~ nav#lnb {
+            display: block;
+        }
+        nav#lnb:hover {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logo">logo</div>
+            <nav id="gnb">
+                <ul>
+                    <li><a href="#">탑</a></li>
+                    <li><a href="#">아우터</a></li>
+                    <li><a href="#">팬츠</a></li>
+                    <li><a href="#">악세사리</a></li>
+                </ul>
+            </nav>
+            <nav id="lnb">
+                <ul>
+                    <li>
+                        <ul>
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">자켓</a></li>
+                            <li><a href="#">코트</a></li>
+                            <li><a href="#">가디건</a></li>
+                            <li><a href="#">머플러</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">청바지</a></li>
+                            <li><a href="#">짧은바지</a></li>
+                            <li><a href="#">긴바지</a></li>
+                            <li><a href="#">레깅스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="slide"><img src="images/photo1.jpg" alt="photo1"></div>
+    </div>
+</body>
+</html>

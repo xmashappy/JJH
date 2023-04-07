@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        body {
+            font-family: Arial,"맑은 고딕", sans-serif;
+        }
+        h2 {
+            text-align: center;
+            padding: 10px;
+        }
+        .left {
+            width: 500px;
+            float: left;
+            margin-right: 30px;
+            overflow: hidden;
+        }
+        .right {
+            width: 460px;
+            float: left;
+        }
+        ul li {
+            position: relative;
+            float: left;
+            width: 33.333%;
+            height: 306px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+        .newb {
+            width: 460px;
+            right: 0;
+            top: 0;
+        }
+        .newb2{
+            background: url(images/Happybath.jpg);
+            width: 100%;
+            height: 306px;
+            cursor: pointer;
+        }
+        .btn1 {
+            padding-top: 120px;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+        }
+        .btn2 {
+            width: 80px;
+            font-size: 16px;
+            padding: 5px;
+            margin: 10px auto;
+            border: 1px solid #fff;
+        }
+        .first {
+            background: url(images/sample01.jpg);
+        }
+        .second {
+            background: url(images/sample02.jpg);
+        }
+        .third {
+            background: url(images/sample03.jpg);
+        }
+        .title {
+            text-align: center;
+            line-height: 306px;
+            color: #fff;
+            font-size: 20px;
+        }
+        .box {
+            position: absolute;
+            width: 300px;
+            left: 0;
+            top: 0;
+            padding-top: 120px;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            opacity: 0;
+        }
+        .box > p:last-child {
+            width: 80px;
+            font-size: 16px;
+            padding: 5px;
+            margin: 10px auto;
+            border: 1px solid #fff;
+        }
+        .box > p:last-child:hover {
+            color: #333;
+            background: #fff;
+            opacity: 0.8;
+        }
+        ul li:hover .title {
+            display: none;
+        }
+        ul li:hover {
+            width: 60%;
+        }
+        ul:hover li:not(:hover) {
+            width: 20%;
+        }
+        ul li:hover .box {
+            opacity: 1;
+        }
+        .btn:hover {
+            background: #fff;
+            color: #333;
+        }
+        .btn2:hover {
+            background: #fff;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <h2>해피바스 선물</h2>
+        <ul>
+            <li class="first">
+                <p class="title">내추럴 성분</p>
+                <div class="box">
+                    <p>해피바스가 담고 있는<br>'내추럴 성분'이 궁금하다면?</p>
+                    <p class="btn">more</p>
+                </div>
+            </li>
+            <li class="second">
+                <p class="title">풍성한 향</p>
+                <div class="box">
+                    <p>해피바스에서 펼쳐지는<br>'풍성한 향'이 궁금하다면?</p>
+                    <p class="btn">more</p>
+                </div>
+            </li>
+            <li class="third">
+                <p class="title">즐거운 경험</p>
+                <div class="box">
+                    <p>해피바스가 이끄는<br>'즐거운 경험'이 궁금하다면?</p>
+                    <p class="btn">more</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="right">
+        <h2>해피바스 뷰티톡</h2>
+        <ul class="newb">
+            <li class="newb2">
+                <p class="btn1">피부고민에 따른 뷰티팁을 드려요.</p>
+                <p class="btn2">more</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

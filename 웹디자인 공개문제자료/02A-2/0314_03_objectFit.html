@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+            width: 1200px;
+            height: 300px;
+            border: 1px solid #000;
+        }
+        div img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        div p {
+            position: absolute;
+            left: 50px;
+            font-size: 30px;
+        }
+        div p:first-of-type{
+            top: 100px;
+        }
+        div p:last-of-type{
+            top: 150px;
+        }
+        .winter {
+            color: aqua;
+            background: rgba(0,0,0,0.5);
+        }
+        .bg {
+            background: url(Slide/슬라이드이미지01.jpg) center/cover;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="Slide/슬라이드이미지01.jpg" alt="photo1">
+        <p><span class="winter">겨울이</span> 더욱더 힘든 이들</p>
+        <p>독거 노인에게 따뜻한 손길을 주세요.</p>
+    </div>
+    <section>
+        <img src="Slide/slide01.jpg" alt="">
+    </section>
+    <div class="bg">
+        <p><span class="winter">겨울이</span> 더욱더 힘든 이들</p>
+        <p>독거 노인에게 따뜻한 손길을 주세요.</p>
+    </div>
+</body>
+</html>

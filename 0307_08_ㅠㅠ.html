@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap {
+            margin: 0 auto;
+            width: 1000px;
+        }
+        .a {
+            height: 100px;
+            background: #f00;
+            color: #fff;
+        }
+        .a > div {
+            width: 33.3333%;
+            height: 100%;
+            float: left;
+        }
+        .aaa {
+            background: #aaa;
+        }
+        .bbb {
+            background: #bbb;
+        }
+        .ccc {
+            background: #ccc;
+        }
+        .b {
+            height: 100px;
+            background: #00f;
+            color: #fff;
+        }
+        /* .middle {
+            position: relative;
+        }
+        .c {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 500px;
+            background: #0f0;
+        }
+        .d {
+            position: absolute;
+            left: 200px;
+            top: 0;
+            width: 700px;
+            height: 500px;
+            background: #acacac;
+        }
+        .e {
+            position: absolute;
+            left: 900px;
+            top: 0;
+            width: 100px;
+            height: 500px;
+            background: #0f0;
+        } */
+        .middle > div {
+            float: left; 
+            height: 500px;
+        }
+        .c {
+            width: 20%;
+            background: #0f0;
+        }
+        .d {
+            width: 70%;
+            background: #acacac;
+        }.e {
+            width: 10%;
+            background: #0f0;
+        }
+        .f {
+            clear: left;
+            height: 100px;
+            background: #00f;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="a">
+            <div class="aaa">aaa</div>
+            <div class="bbb">bbb</div>
+            <div class="ccc">ccc</div>
+        </div>
+        <div class="b">2</div>
+        <div class="middle">
+            <div class="c">3</div>
+            <div class="d">4</div>
+            <div class="e">5</div>
+        </div>
+        <div class="foot">
+            <div class="f">6</div>
+        </div>
+    </div>
+</body>
+</html>

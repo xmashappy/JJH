@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            float: left;
+            border: 1px solid #000;
+        }
+        div:first-child p {
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            white-space: nowrap;
+        }
+        div:last-child {
+            clear: left;
+        }
+        div:last-child p {
+            padding: 10px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>회사소개회사소개회사소개회사소개</p>
+        <p>회사소개</p>
+    </div>
+    <div>
+        <p>회사소개회사소개회사소개회사소개</p>
+        <p>회사소개</p>
+    </div>
+</body>
+</html>

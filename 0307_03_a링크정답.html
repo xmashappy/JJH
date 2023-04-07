@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>   
+        /* div {
+            display: none;
+        }
+        div:target {
+            display: block;
+        } */
+        #Link1,#Link2,#Link3 {
+            display: none;
+        }
+        #Link1:target {
+            display: block;
+        }#Link2:target {
+            display: block;
+        }
+        #Link3:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a href="#Link1">Link1</a>
+    <a href="#Link2">Link2</a>
+    <a href="#Link3">Link3</a>
+        <div id="Link1">
+            <h3>content to Link1</h3>
+            <p>안녕하세요</p>
+        </div>
+        <div id="Link2">
+            <h3>content to Link2</h3>
+            <p>안녕하세요</p>
+        </div>
+        <div id="Link3">
+            <h3>content to Link3</h3>
+            <p>안녕하세요</p>
+        </div>
+</body>
+</html>

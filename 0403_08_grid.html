@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas: "header header header"
+                                 "slide slide slide"
+                                 "notice gallery go"
+                                 "footer footer footer";
+            width: 1200px;                   
+            margin: 0 auto;
+            grid-template-rows: 100px 300px 200px 100px;
+        }
+        .item1 {
+            display: grid;
+            grid-template-columns: 200px auto;
+            grid-area: header;
+            background: #aaa;
+        }
+        .item1 .logo {
+            background: #f00;
+        }
+        .item1 .menu {
+            background: #0f0;
+        }
+        .item2 {
+            grid-area: slide;
+            background: #bbb;
+        }
+        .item3 {
+            grid-area: notice;
+            background: #ccc;
+        }
+        .item4 {
+            grid-area: gallery;
+            background: #ddd;
+        }
+        .item5 {
+            grid-area: go;
+            background: #eee;
+        }
+        .item6 {
+            display: grid;
+            grid-template-areas: "logo menu"
+                                 "logo copyright";
+            grid-template-columns: 200px auto;
+            grid-area: footer;
+            background: #000;
+        }
+        .item6 .logo {
+            grid-area: logo;
+            background: #f00;
+        }
+        .item6 .menu {
+            grid-area: menu;
+            background: #0f0;
+        }
+        .item6 .copyright {
+            grid-area: copyright;
+            background: #00f;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <div class="logo"></div>
+            <div class="menu"></div>
+        </div>
+        <div class="grid-item item2">slide</div>
+        <div class="grid-item item3">공지사항</div>
+        <div class="grid-item item4">갤러리</div>
+        <div class="grid-item item5">바로가기</div>
+        <div class="grid-item item6">
+            <div class="logo"></div>
+            <div class="menu"></div>
+            <div class="copyright"></div>
+        </div>
+    </div>
+</body>
+</html>

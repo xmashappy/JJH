@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            width: 500px;
+        }
+        img {
+            width: 500px;
+            display: none;
+        }
+        #one:checked ~ p .photo1 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="photo" id="one">
+    <p>
+        <label for="one">photo1</label>
+    </p>
+    <p>
+        <img src="images/photo1.jpg" alt="photo1" class="photo1">
+    </p>
+    
+</body>
+</html>

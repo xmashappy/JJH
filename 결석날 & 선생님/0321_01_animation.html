@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        body {
+            padding: 20px;
+            margin: 20px;
+            background: #555;
+            color: #fff;
+        }
+        .banner ul li {
+            cursor: pointer;
+            margin: 50px 0;
+        }
+        .banner ul li div {
+            background: #333;
+            padding: 20px;
+            border-radius: 100px;
+            box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.3),
+                        inset 0 0 10px 0 rgba(255,255,255,0.5),
+                        inset 0 0 50px 0 rgba(255,255,255,0.5);
+        }
+        @keyframes color1 {
+            0% {background: #333;}
+            100% {background: #8ac007;}
+        }
+        @keyframes color2 {
+            0% {background: #333;}
+            25% {background: #8ac007;}
+            50% {background: #07bec0;}
+            75% {background: #c07d07;}
+            100% {background: #8ac007;}
+        }
+        .banner ul li .div1:hover {
+            animation: color1 1s infinite alternate;
+        }
+        .banner ul li .div2 {
+            animation: color2 2s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1>basic :: CSS3 Animation</h1>
+        <ul>
+            <li>
+                <div class="div1">마우스를 올리면 색상이 변경됩니다.</div>
+            </li>
+            <li>
+                <div class="div2">애니메이션은 여러 단계를 통한 변환 효과가 가능합니다.</div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

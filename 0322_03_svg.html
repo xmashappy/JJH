@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .svg1 {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+        }
+        .svg1 p {
+            text-align: center;
+            line-height: 200px;
+        }
+        .svg1 p, .svg1 svg {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 0;
+            top: 0;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <svg width="500" height="500">
+        <circle cx="200" cy="200" r="100" fill="none" stroke="#000" />
+        <text x="170" y="200" fill="red">I love <tspan x="170" y="220" fill="red">SVG!</tspan></text>
+    </svg>
+    <div class="svg1">
+        <p>SVG!</p>
+        <svg>
+            <circle cx="50%" cy="50%" r="100" fill="none" stroke="#000" />
+        </svg>
+    </div>
+</body>
+</html>

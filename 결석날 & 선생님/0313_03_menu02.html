@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        body {
+            font: 1em Arial, 돋움, Dotum, sans-serif;
+        }
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            height: 100px;
+            background: #ccc;
+        }
+        .logo, nav {
+            float: left;
+        }
+        .logo {
+            width: 200px;
+        }
+        nav {
+            width: 1000px;
+        }
+        nav > ul {
+            float: right;
+            width: 700px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+        nav > ul > li {
+            position: relative;
+            float: left;
+            width: 25%;
+        }
+        
+        nav > ul > li > a {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: 1px solid #000;
+            border-left: none;
+        }
+
+        nav > ul > li:first-child > a {
+            border-left: 1px solid #000;
+        }
+        nav .sub {
+            display: none;
+            position: absolute;
+            width: 100%;
+            background: #fff;
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+            box-sizing: border-box;
+        }
+        nav > ul > li:hover .sub {
+            display: block;
+            border-bottom: 1px solid #000;
+        }
+        nav .sub li a {
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+        nav > ul > li:hover > a, nav .sub li a:hover {
+            background: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logo">logo</div>
+            <nav>
+                <ul>
+                    <li><a href="#">탑</a>
+                        <ul class="sub">
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">아우터</a>
+                        <ul class="sub">
+                            <li><a href="#">자켓</a></li>
+                            <li><a href="#">코트</a></li>
+                            <li><a href="#">가디건</a></li>
+                            <li><a href="#">머플러</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">팬츠</a>
+                        <ul class="sub">
+                            <li><a href="#">청바지</a></li>
+                            <li><a href="#">짧은바지</a></li>
+                            <li><a href="#">긴바지</a></li>
+                            <li><a href="#">레깅스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">악세사리</a>
+                        <ul class="sub">
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="slide"><img src="images/photo1.jpg" alt="photo1"></div>
+    </div>
+</body>
+</html>

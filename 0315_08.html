@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        ul {
+            list-style: none;
+        }
+        body {
+            font-family: Arial, "맑은 고딕", sans-serif;
+            background: #633c6f;
+        }
+        .gnb {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .gnb ul li {
+            width: 20%;
+            float: left;
+            text-align: center;
+        }
+        .gnb ul li a {
+            position: relative;
+        }
+        .gnb ul li a:hover {
+            color: #ffef64;
+        }
+        .gnb ul li a::after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 100%;
+            height: 3px;
+            background: #ffef64;
+            left: 0;
+            bottom: -10px;
+            transform: scale(0);
+            transition: transform 0.5s;
+        }
+        .gnb ul li:hover a::after {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="gnb">
+        <ul>
+            <li><a href="#">Happy Bath이야기</a></li>
+            <li><a href="#">해피바스선물</a></li>
+            <li><a href="#">해피바스뷰티톡</a></li>
+            <li><a href="#">해피바스제품</a></li>
+            <li><a href="#">해피바스함께하기</a></li>
+        </ul>
+    </div>
+</body>
+</html>

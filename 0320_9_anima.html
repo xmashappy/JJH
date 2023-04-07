@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clearfix::before, .clearfix::after {
+            content: "";
+            display: table;
+        }
+        .clearfix::after {
+            clear: both;
+        }
+        input {
+            display: none;
+        }
+        section {
+            width: 20px;
+            margin: 100px auto 20px;
+        }
+        div {
+            width:0 ;
+            height: 0;
+            float: left;
+        }
+        div:first-child {
+            border-left: 10px solid #000;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: none;
+        }
+        div:last-child {
+            border-left: 10px solid transparent; 
+            border-top: none;
+            border-bottom: 10px solid #000;
+            border-right: 10px solid transparent;
+        }
+        ul {
+            clear: both;
+            list-style: none;
+            /* text-align: center; */
+            width: 200px;
+            margin: 0 auto;
+        }
+        ul li {
+            /* display: inline-block; */
+            float: left;
+            width: 100px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            padding: 10px 20px;
+            border: 1px solid #000;
+            border-radius: 50px;
+        }
+        #start:checked ~ section div:first-child {
+            animation: move 0.5s linear infinite alternate;
+        }
+        #start:checked ~ section div:last-child {
+            animation: move_up 0.5s linear infinite alternate;
+        }
+        #start:checked ~ ul li:first-child label,
+        #stop:checked ~ ul li:last-child label {
+            background: #000;
+            color: #fff;
+        }
+        @keyframes move {
+            from {transform: translateX(-5px);}
+            to {transform: translateX(5px);}
+        }
+        @keyframes move_up {
+            from {transform: translateY(-5px);}
+            to {transform: translateY(5px);}
+        }
+        #stop:checked ~ section div {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="btn" id="start" checked>
+    <input type="radio" name="btn" id="stop">
+    <section class="clearfix">
+        <div></div>
+        <div></div>
+    </section>
+    <ul>
+        <li><label for="start">start</label></li>
+        <li><label for="stop">stop</label></li>
+    </ul>
+</body>
+</html>

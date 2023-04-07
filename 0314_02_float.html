@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*자식요소가 float속성을 가졌을 때 부모 높이 지정 방법
+        1. 부모요소에 높이값을 지정한다.
+        2. 부모요소에 overflow: hidden값을 지정한다.
+        3. 부모요소에 clearfix를 한다.
+        */
+        .clearfix::before, .clearfix::after {
+            content: "";
+            display: table;/*또는 display: block*/
+        }
+        .clearfix::after{
+            clear: both;
+        }
+        div {
+            border: 1px solid #000;
+        }
+        div p:first-child {
+            float: left;
+        }
+        div p:last-child {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="aaa clearfix">
+        <p>회사소개</p>
+        <p>회사소개</p>
+    </div>
+    <div class="clearfix">
+        <p>회사소개</p>
+        <p>회사소개</p>
+    </div>
+</body>
+</html>

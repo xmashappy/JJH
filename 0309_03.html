@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .con {
+            width: 1200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        .con > div {
+            width: 33.333%;
+            height: 100%;
+            float: left;
+        }
+        .notice {
+            background: #aaa;
+        }
+        .notice table {
+            border: 1px solid #000;
+            table-layout: fixed;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .notice table td:first-child {
+            width: 250px;
+            padding-right: 10px;
+            padding: 5px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 14px;
+       }
+       table td:last-child {
+            padding-right: 10px;
+            font-size: 14px;
+       }
+        .banner {
+            background: #bbb;
+        }
+        .go {
+            background: #ccc;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="notice">
+            <table>
+                <tr>
+                    <td>애스크로 서비스 변경 약관을 확인하세요</td>
+                    <td> 2019-10-10</td>
+                </tr>
+                <tr>
+                    <td>배송 택배사 변경 및 배송방식 변경에 따른 공지</td>
+                    <td> 2019-10-10</td>
+                </tr>
+                <tr>
+                    <td>여름 이월상품 정리 세일 안내</td>
+                    <td> 2019-10-10</td>
+                </tr>
+                <tr>
+                    <td>여름 바캉스 상품 정리 세일 안내</td>
+                    <td> 2019-10-10</td>
+                </tr>
+                <tr>
+                    <td>반품 및 교환 조건 변경 공지 </td>
+                    <td> 2019-10-10</td>
+                </tr>
+                <tr>
+                    <td>상품별 사이즈표 보는 방법과 치수 공지</td>
+                    <td> 2019-10-10</td>
+                </tr>
+            </table>
+        </div>
+        <div class="banner"></div>
+        <div class="go"></div>
+    </div>
+        
+</body>
+</html>

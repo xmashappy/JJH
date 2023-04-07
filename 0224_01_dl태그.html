@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dl {
+            display: inline-block;
+        }
+        dt:first-child {
+            color: blue;
+        }
+        dt:nth-of-type(2) {
+            color: red;
+        }
+        dd::first-letter, p::first-letter {
+            font-size: 32px;
+            color: blue;
+        }
+        p::first-line {
+            text-decoration: underline;
+        }
+        p::before {
+            content:  url(images/ico_bbslist.gif);
+        }
+        P::after {
+            content: "가상요소선택자뒤";
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar urna eu leo vestibulum rhoncus. Curabitur sollicitudin eros vitae pharetra posuere. Nullam auctor sed eros in pretium. Aliquam egestas sapien eget purus facilisis, sit amet efficitur dolor suscipit. Donec pharetra fringilla orci, a sollicitudin erat tincidunt ultrices. Aliquam lacinia diam quis velit lobortis efficitur. Curabitur pharetra semper arcu, vel semper magna ultrices eget. Morbi dictum ex lorem, sed rutrum magna imperdiet vitae. Vestibulum aliquet maximus odio et aliquam. In at augue bibendum, tincidunt arcu ac, scelerisque ante. Sed vehicula aliquam ex eget mollis. Etiam aliquam leo luctus, consectetur nisi vestibulum, rhoncus risus. Pellentesque luctus a magna quis porta. Sed leo odio, tempor in odio nec, maximus condimentum lacus. Maecenas finibus dignissim purus, faucibus pulvinar eros egestas eget.</p>
+</body>
+</html>

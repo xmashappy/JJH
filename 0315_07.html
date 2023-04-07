@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        ul {
+            list-style: none;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .nav {
+            position: relative;
+            width: 700px;
+            margin: 50px auto;
+            text-align: center;
+            border: 1px solid #333;
+            overflow: hidden;
+        }
+        .nav a {
+            position: relative;
+            display: block;
+            width: 20%;
+            float: left;
+            padding: 20px 0 40px;
+        }
+        .nav a:hover {
+            color: #8ac007;
+        }
+        .nav .effect {
+           position: absolute;
+           /* left: 0;
+           width: 8px; 
+           height: 8px;
+           background: #8ac007;  */
+           transition: all 1s;
+        }
+        .nav a:first-child:hover ~ .effect {
+            left: 10%;
+        }
+        .nav a:nth-child(2):hover ~ .effect {
+            left: 30%;
+        }
+        .nav a:nth-child(3):hover ~ .effect {
+            left: 50%;
+        }
+        .nav a:nth-child(4):hover ~ .effect {
+            left: 70%;
+        }
+        .nav a:nth-child(5):hover ~ .effect {
+            left: 90%;
+        }
+        .line .effect {
+            width: 70px;
+            height: 3px;
+            background: #8ac007;
+            bottom: 20px;
+            margin-left: -35px;
+            left: -10%;
+        }
+        .dot::after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: #8ac007;
+            bottom: 20px;
+        }
+        .dot a::after {
+            position: absolute;
+            content: "";
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #8ac007;
+            bottom: 18px;
+            left: 50%;
+        }
+        .dot .effect {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #8ac007;
+            left: -10%;
+            bottom: 15px;
+        }
+        .box .effect, .box a::before {
+            background: url(images/target.png) no-repeat;
+        }
+        .box .effect {
+            width: 60px;
+            height: 8px;
+            bottom: 15px;
+            left: -10%;
+            margin-left: -29px;
+        }
+        .box a::before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 16px;
+            height: 20px;
+            background-position: -64px 0;
+            bottom: 10px;
+            left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav line">
+        <a href="#">HTML</a>
+        <a href="#">Css</a>
+        <a href="#">Javascript</a>
+        <a href="#">jQuery</a>
+        <a href="#">Portfolio</a>
+        <div class="effect"></div>
+    </div>
+    <div class="nav dot">
+        <a href="#">HTML</a>
+        <a href="#">Css</a>
+        <a href="#">Javascript</a>
+        <a href="#">jQuery</a>
+        <a href="#">Portfolio</a>
+        <div class="effect"></div>
+    </div>
+    <div class="nav box">
+        <a href="#">HTML</a>
+        <a href="#">Css</a>
+        <a href="#">Javascript</a>
+        <a href="#">jQuery</a>
+        <a href="#">Portfolio</a>
+        <div class="effect"></div>
+    </div>
+</body>
+</html>

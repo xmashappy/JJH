@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: notokr;
+            src: url(webfonts/NotoSansKR-Regular.otf) format("otf");
+        }
+        table {
+            width: 900px;
+            margin: 0 auto;
+            font: 14px notokr;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid #aaa;
+            border-right: none;
+            border-left: none;
+            padding: 20px;
+        }
+        td:first-child {
+            text-align: center;
+            border-top-width: 2px;
+            background: #efefef;
+        }
+        tr:first-child td {
+            border-top: 2px solid #484848;
+        }
+        td p {
+            letter-spacing: -1px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #aaa;
+        }
+        td p span{
+            color: darkblue;
+            font-weight: bold;
+        }
+        select {
+            width: 120px;
+            padding: 5px;
+        }
+        input {
+            padding: 5px;
+            border: 1px solid #aaa;
+            border-radius: 2px;
+        }
+        textarea {
+            padding: 5px;
+            resize: none;
+            width: 700px;
+            height: 200px;
+        }
+        :focus {
+            outline: none;
+        }
+        input:focus {
+            background: rgb(0,0,255,0.1);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><b>교육대상</b></td>
+            <td>
+                <select name="query" id="query">
+                    <option value="">일반과정</option>
+                    <option value="">구직자취업과정(국비지원)</option>
+                    <option value="">재직자능력향상과정(국비지원)</option>
+                    <option value="">국가기간전략산업직종훈련</option>
+                    <option value="">방학특강</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><b>지점</b></td>
+            <td>
+                <select name="jijum" id="jijum">
+                    <option value="">선택</option>
+                    <option value="">강남</option>
+                    <option value="">강북</option>
+                    <option value="">대전</option>
+                    <option value="">부산</option>
+            </td>
+        </tr>
+        <tr>
+            <td><b>이름</b></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><b>연락처</b></td>
+            <td><input type="text" placeholder="연락 받으실 번호를 입력해 주세요." size="35" ></td>
+        </tr>
+        <tr>
+            <td><b>이메일</b></td>
+            <td><input type="text"> @ <input type="text">
+                <select name="email" id="email">
+                    <option value="">직접입력</option>
+                    <option value="">naver.com</option>
+                    <option value="">gmail.com</option>
+            </td>
+        </tr>
+        <tr>
+            <td><b>희망과정</b></td>
+            <td><input type="text" placeholder="과정명을 입력해 주세요." size="70"></td>
+        </tr>
+        <tr>
+            <td><b>상담내용</b></td>
+            <td><textarea name="tell" id="tell" placeholder="상담내용을 입력해 주세요."></textarea> </td>
+        </tr>
+        <tr>
+            <td><b>개인정보 수집 및 이용동의</b></td>
+            <td><p>
+                (주)지아이티아카데미는 온라인상담을 이용하기 원하는 분을 대상으로 아래와 같이 개인정보를 수집하고 있습니다.
+                <br>-수집항목 : [필수] 성명, 이메일주소, 연락처
+                <br>-개인정보의 수집 및 이용목적 : 온라인상담에 따른 본인확인 및 원활한 의사소통 경로 확보
+                <br>-보유 및 이용기간 : 모든 검토가 완료된 후 3년간 이용자의 조회를 위하여 보관하며, 이 후 해당정보를 지체없이 파기합니다.
+                <br>-동의 거부권리 안내 추가 :위와 같은 개인정보 수집 동의를 거부할 수 있습니다. 다만 동의를 거부하는 경우 온라인상담 이용이 제한될 수 있습니다.
+                <br>그 밖의 사항은 <span>개인정보취급방침</span>을 준수합니다.
+            </p>
+            <input type="checkbox" name="checkbox" id="checkbox"> 개인정보수집 및 이용에 동의합니다.
+        </td>
+        </tr>
+    </table>
+</body>
+</html>

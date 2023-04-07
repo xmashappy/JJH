@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100px;
+        }
+        :target {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.naver.com" target="_blank">네이버</a>
+    <a href="images/photo1.jpg" target="_blank">photo1</a>
+    <a href="images/photo2.jpg" target="new">
+        <img src="images/photo2.jpg" alt="작은 이미지">
+    </a>
+    <a href="#one">one으로 이동</a>
+    <p id="one">one</p>
+    <a href="#two">two으로 이동</a>
+    <p id="two">two</p>
+</body>
+</html>

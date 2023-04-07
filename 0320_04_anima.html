@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 960px;
+            height: 640px;
+            animation-name: bg;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes bg {
+            0% {content: url(images/photo1.jpg);}
+            20% {content: url(images/photo2.jpg);}
+            40% {content: url(images/photo3.jpg);}
+            60% {content: url(images/photo4.jpg);}
+            80% {content: url(images/photo5.jpg);}
+            100% {content: url(images/photo6.jpg);}
+        }
+    </style>
+</head>
+<body>
+    <div><img src="images/photo1.jpg" alt="photo1"></div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas: "header slide"
+                                 "header notice"
+                                 "header footer";
+            width: 1000px;   
+            grid-template-columns: 200px auto;
+            grid-template-rows: 350px 200px 100px;
+        }
+        .item1 {
+            display: grid;
+            grid-template-rows: 100px auto;
+            grid-area: header;
+            background: #aaa;
+        }
+        .item1 .logo {
+            background: #0f0;
+        }
+        .item1 .menu {
+            background: #f00;
+        }
+        .item2 {
+            grid-area: slide;
+            background: #bbb;
+        }
+        .item3 {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-area: notice;
+            background: #ccc;
+        }
+        .item3 .col1 {
+            background: #00f;
+        }
+        .item3 .col2 {
+            background: #f00;
+        }
+        .item3 .col3 {
+            background: #0f0;
+        }
+        .item4 {
+            display: grid;
+            grid-template-areas: "logo menu"
+                                 "logo copyright";
+            grid-template-columns: 200px auto;
+            grid-area: footer;
+            background: #ddd;
+        }
+        .item4 .logo {
+            background: #0f0;
+            grid-area: logo;
+        }
+        .item4 .menu {
+            background: #00f;
+            grid-area: menu;
+        }
+        .item4 .copyright {
+            background: #f00;
+            grid-area: copyright;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <div class="logo"></div>
+            <div class="menu"></div>
+        </div>
+        <div class="grid-item item2"></div>
+        <div class="grid-item item3">
+            <div class="col1"></div>
+            <div class="col2"></div>
+            <div class="col3"></div>
+        </div>
+        <div class="grid-item item4">
+            <div class="logo"></div>
+            <div class="menu"></div>
+            <div class="copyright"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: brands;
+            src: url(webfonts/fa-brands-400.woff2) format("woff2");
+        }
+        @font-face {
+            font-family: solid;
+            src: url(webfonts/fa-solid-900.woff2) format("woff2");
+        }
+        @font-face {
+            font-family: regular;
+            src: url(webfonts/fa-regular-400.woff2) format("woff2");
+        }
+        h1::before {
+            content: "\f099";
+            font-family: brands;
+        }
+        h1::after {
+            content: "\f099";
+            font-family: brands;
+        }
+    </style>
+</head>
+<body>
+    <h1>폰트어썸</h1>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+            cursor: pointer;
+        }
+        .menu span {
+            display: block;
+            width: 35px;
+            height: 5px;
+            background: #333;
+            margin: 6px 0;
+            transition: transform 0.3s;
+        }
+        input:checked ~ .menu .bar1 {
+            transform: translate(0, 11px) rotate(45deg);
+        }
+        input:checked ~ .menu .bar2 {
+            opacity: 0;
+        }
+        input:checked ~ .menu .bar3 {
+            transform: translate(0, -11px) rotate(-45deg);
+        }
+        .box {
+            position: fixed;
+            width: 500px;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            left: -100%;
+            top: 0;
+            transition: left 0.5s;
+            z-index: -1;
+        }
+        input:checked ~ .box {
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="ham">
+    <label for="ham" class="menu">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+    </label>
+    <div class="box"></div>
+</body>
+</html>

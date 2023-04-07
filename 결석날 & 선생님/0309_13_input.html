@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        input {
+            display: none;
+        }
+        ul {
+            list-style: none;
+        }
+        .btn {
+            position: absolute;
+            z-index: 1;
+        }
+        .btn li {
+            float: left;
+            width: 100px;
+            height: 40px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 40px;
+            background: #fff;
+        }
+        .con {
+            position: relative;
+            width: 350px;
+            height: 150px;
+            top: 41px;
+            border: 1px solid #000;
+        }
+        #notice:checked ~ .btn li:first-child {
+            background: #fff;
+            border-bottom-color: #fff;
+            border-right: none;
+        }
+        #notice:checked ~ .con .second {
+            display: none;
+        }
+        #gallery:checked ~ .btn li:last-child {
+            background: #fff;
+            border-left: none;
+            border-bottom-color: #fff;
+        }
+        #gallery:checked ~ .con .first {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="board" id="notice" checked>
+    <input type="radio" name="board" id="gallery">
+    <ul class="btn">
+        <li><label for="notice">공지사항</label></li>
+        <li><label for="gallery">갤러리</label></li>
+    </ul>
+    <ul class="con">
+        <li class="first">공지사항내용</li>
+        <li class="second">갤러리내용</li>
+    </ul>
+</body>
+</html>

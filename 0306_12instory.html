@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #D3232A;
+        }
+        .wrap{
+            width: 100%;
+        }
+        .top {
+            width: 1000px;
+            margin: 0 auto;
+            text-align: right;
+            height: 23px;
+        }
+        .top ul {
+            float: right;
+            list-style: none;
+        }
+        .top ul li {
+            float: left;
+        }
+        .top ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding-left: 20px;
+            text-transform: uppercase;
+        }
+        .top ul li a::after {
+            content: "|";
+            padding-left: 20px;
+        }
+        .top ul li:last-child a::after {
+            content: "";
+        }
+        .top ul li a:hover {
+            color: coral;
+        }
+        .top ul li a:hover::after {
+            color: #fff;
+        }
+        .pattern {
+            background: url(images/pattern.gif);
+            min-width: 1000px;
+            height: 82px;
+        }
+        .pattern_in {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .con {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .con > div {
+            float: left;
+            height: 625px;
+        }
+        .right {
+            position: relative;
+        }
+        .right h2 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            color: #fff;
+        }
+        .copyright {
+            clear: left;
+            min-width: 1000px;
+            height: 100px;
+            background: #fff;
+        }
+        .copyright_in {
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top">
+            <ul>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">japanese</a></li>
+                <li><a href="#">chinese</a></li>
+                <li><a href="#">italian</a></li>
+            </ul>
+        </div>
+        <div class="pattern">
+            <div class="pattern_in">
+                <img src="images/index_pattern.gif" alt="index_pattern">
+            </div>
+        </div>
+        <div class="con">
+            <div class="left">
+                <img src="images/index_main_01.gif" alt="index_main_01">
+            </div>
+            <div class="right">
+                <img src="images/index_main_02.gif" alt="index_main_02">
+                <h2>Home 메인페이지입니다</h2>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright_in">
+                <img src="images/copyright.gif" alt="copyright">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

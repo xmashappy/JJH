@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg {
+            width: 400px;
+            height: 400px;
+            border-radius: 50
+        }
+        .bg1 {
+            background-image: radial-gradient(at 30% 20%,red,green,blue);
+        }
+        .bg2 {
+            background-image: radial-gradient(farthest-corner at 30% 20%, red,green,blue);
+        }
+        .bg3 {
+            background-image: radial-gradient(farthest-side at 30% 20%, red,green,blue);
+        }
+        .bg4 {
+            background-image: radial-gradient(closest-corner at 30% 20%, red,green,blue);
+        }
+        .bg5 {
+            background-image: radial-gradient(closest-side at 30% 20%, red,green,blue);
+        }
+        .bg6 {
+            background-image: conic-gradient(red 0deg,green 90deg,blue 90deg, black 180deg, yellow 270deg);
+        }
+        .bg7 {
+            background-image: conic-gradient(red 0deg,green 90deg,yellow 270deg);
+        }
+        .bg8 {
+            background-image: conic-gradient(from 90deg,red 0deg,green 90deg,yellow 270deg);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h2>at 30% 20%</h2>
+    <p class="bg bg1"></p>
+    <h2>farthest-corner at 30% 20%</h2>
+    <p class="bg bg2"></p>
+    <h2>farthest-side at 30% 20%</h2>
+    <p class="bg bg3"></p>
+    <h2>closest-corner at 30% 20%</h2>
+    <p class="bg bg4"></p>
+    <h2>closest-side at 30% 20%</h2>
+    <p class="bg bg5"></p>
+    <h2>angular gradient</h2>
+    <p class="bg bg6"></p>
+    <h2>at 30% 20%</h2>
+    <p class="bg bg7"></p>
+    <h2>at 30% 20%</h2>
+    <p class="bg bg8"></p>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+        .content {
+            width: 80%;
+            background: #ccc;
+            margin: 200px auto;
+        }
+        .head, .foot {
+            position: relative;
+            background: #8ac007;
+            padding: 20px;
+        }
+        .close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            color: #ccc;
+            text-decoration: none;
+        }
+        .con {
+            padding: 20px;
+        }
+        #popup:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a href="#popup">Open Modal</a>
+    <div id="popup" class="modal">
+        <div class="content">
+            <div class="head">
+                <h2>Modal Header</h2>
+                <a href="#" class="close">X</a>
+            </div>
+            <div class="con">
+                <p>some text in the modal</p>
+                <p>some text in the modal</p>
+            </div>
+            <div class="foot">
+                <h4>Modal Footer</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

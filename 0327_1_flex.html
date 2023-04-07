@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .flex-container {
+        display: flex;
+        /* flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap; */
+        align-items: flex-start;
+        background: #ccc;
+        width: 1200px;
+        height: 600px;
+       } 
+       .item {
+        /* flex-basis: 200px; */
+        background: #ddd;
+        border: 1px solid #000;
+       }
+       .a {
+        flex-grow: 1;
+       }
+       .b {
+        flex-grow: 2;
+       }
+       .c {
+        flex-grow: 3;
+       }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item a">111111111111</div>
+        <div class="item b">2</div>
+        <div class="item c">3</div>
+       </div>
+</body>
+</html>

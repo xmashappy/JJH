@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        p.a, span {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+        p.a {
+            display: inline-block;
+        }
+        p.b {
+            width: 400px;
+            border: 1px solid #f00;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <p class="a">블록태그</p>
+    <p class="a">블록태그</p>
+    <p class="b">
+        <span class="a">인라인태그</span>
+        <span>인라인태그</span>
+        <span>인라인태그</span>
+    </p>
+    
+</body>
+</html>

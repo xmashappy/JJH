@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: block;
+}
+.clearfix::after{
+    clear: both;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+body {
+    font-family: Arial, "맑은 고딕", "sans-serif";
+}
+.top {
+    width: 1001px;
+    margin: 0 auto;
+}
+.menu {
+    width: 1001px;
+    margin: 0 auto;
+    height: 70px;
+    background: #003466;
+}
+.menu ul li {
+    float: left;
+}
+.menu ul li a {
+    position: relative;
+    z-index: 1;
+    display: block;
+    color: #fff;
+    line-height: 70px;
+    padding: 0 20px;
+}
+.menu ul li a:hover {
+    background: #f00;
+}
+.menu ul li:first-child a {
+    background: #f00;
+}
+.visual {
+    position: relative;
+    width: 1001px;
+    margin: 0 auto;
+}
+.visual img {
+    position: absolute;
+    top: -70px;
+}

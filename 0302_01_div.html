@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.a {
+            /* width: 100px;
+            height: 100px; */
+            border: 1px solid #000;
+            /* overflow: hidden; */
+            text-align: center;
+            margin: 10px auto;
+        }
+        div.b {
+            border: 1px solid #f00;
+            text-align: center;
+            /* font-size: 0; */
+        }
+        div.b > div {
+            display: inline-block;
+            width: 50px;
+            background: #ccc;
+            border: 1px solid #0f0;
+            /* font-size: 16px; */
+        }
+        div.c {
+            width: 1280px;
+            /* height: 100px; */
+            margin: 0 auto;
+            border: 1px solid #00f;
+            overflow: hidden;
+        }
+        div.c div:first-child {
+            float: right;
+            height: 50px;
+            border: 1px solid #ff0;
+        }
+        div.c div:last-child {
+            float: right;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div>블록태그로 그룹정의태그</div>
+        <div>줄바꿈이 일어납니다.</div>
+        <div>가로, 세로 크기 지정이 가능합니다.</div>
+        <div>텍스트와 인라인태그와 블록태그 모두가 자식으로 포함할 수 있습니다.</div>
+    </div>
+    <div class="b">
+        <div>하위요소
+            <div>후손요소</div>
+        </div>
+        <div>하위요소</div>
+        <div>하위요소</div>
+        <div>하위요소</div>
+    </div>
+    <div class="c">
+        <div>left</div>
+        <div>right</div>
+    </div>
+</body>
+</html>

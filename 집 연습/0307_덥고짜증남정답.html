@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 1200px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            overflow: hidden;
+        }
+        .wrap > div {
+            float: left;
+            width: 22%;
+            height: 100px;
+            margin-left: calc((100% - 88%) / 3);
+        }
+        .wrap > div:first-child {
+            margin-left: 0;
+        }
+        .a {
+            background: #aaa;
+        }
+        .b {
+            background: #bbb;
+        }
+        .c {
+            background: #ccc;
+        }
+        .d {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="a">1</div>
+        <div class="b">2</div>
+        <div class="c">3</div>
+        <div class="d">4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th {
+            background: #ccc;
+            font-weight: normal;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px 0;
+        }
+        td[rowspan="2"],td[colspan="2"] {
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">내용1내용2</td>
+                <td>내용3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">내용1내용1</td>
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+            <tr>
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+            <tr>
+                <td>내용1</td>
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>내용1</td>
+            <td colspan="2">내용2내용3</td>
+        </tfoot>
+    </table>
+</body>
+</html>
