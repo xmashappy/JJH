@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+        }
+        img {
+            width: 300px;
+        }
+    </style>
+    <script>
+       let i = 1;
+       function next(){
+        i++; //i = i+1 i+=1
+        if(i > 6) {
+            i = 1;
+        }
+        document.getElementsByTagName("img")[0].src = "../images/photo"+i+".jpg";
+       } 
+       function prev(e) {
+        e.preventDefault();
+        i--;//i = i-1; i-=1
+        if(i < 1) {
+            i = 6;
+        }
+        document.getElementsByTagName("img")[0].src = "../images/photo"+i+".jpg";
+       }
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>이미지 넘기기</h1>
+        <div class="btn">
+            <a href="#" onclick="prev(event)">이전으로</a>
+            <a href="javascript:void(0)" onclick="next()">다음으로</a>
+        </div>
+        <img src="../images/photo1.jpg" alt="photo1">
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p01 {
+            background: #f00;
+        }
+    </style>
+</head>
+<body>
+    <p class="demo p01 p02">1문단태그입니다.</p>
+    <p class="demo">2문단태그입니다.</p>
+    <p class="demo">3문단태그입니다.</p>
+    <p class="demo">4문단태그입니다.</p>
+    <button type="button" onclick="ha()">클릭</button>
+    <script>
+        function ha() {
+          let x = document.getElementsByClassName("demo")[0].classList;
+          //x.add("p01");
+          //x.remove("demo");
+          //x.replace("demo","p01");
+          //x.toggle("p01");
+          let y = x.length;
+          console.log(y);
+        }
+    </script>
+</body>
+</html>

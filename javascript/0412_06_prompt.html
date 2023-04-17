@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리연산자</title>
+        
+</head>
+<body>
+    
+    <script>
+       let name = prompt("당신의 이름은 ?");
+       let kor = Number(prompt("국어점수는 ?",""));
+       let eng = Number(prompt("영어점수는 ?",""));
+       let math = Number(prompt("수학점수는 ?",""));
+       let sum = kor + eng + math;
+       let avg = sum / 3;
+       let result = kor >= 40 && eng >= 40 && math >= 40 && avg >= 60;
+       document.write("국어점수 : "+ kor + "<br>"+"영어점수 : "+ eng + "<br>"+"수학점수 : "+ math + "<br>"+"총점 : "+ sum + "<br>");
+       //document.write("kor : "+ typeof kor);
+       document.write("평균 : "+ avg + "<br>");
+       document.write(name," 님은", result ? "합격" : "불합격" , "입니다"+"<br>");
+    </script>
+</body>
+</html>

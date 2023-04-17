@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        #modal {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        #modal .inner {
+            background: #fff;
+            padding: 20px 50px;
+        }
+        #modal .inner span {
+            float: right;
+            cursor: pointer;
+        }
+        #modal .inner p {
+            clear: both;
+        }
+    </style>
+    
+</head>
+<body>
+    <button onclick="myShow()">Open modal</button>
+    <div id="modal">
+        <div class="inner">
+            <span onclick="myHide()">X</span>
+            <p>some text in the Modal</p>
+        </div>
+    </div>
+    <script>
+        let modal = document.getElementById("modal");
+        function myShow() {
+            modal.style.display = "flex";
+        }
+        function myHide() {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //charAt()문자열의 지정된 인덱스(위치)에 있는 문자 반환
+        let x = "Hello ";
+        let y = x.charAt(1);
+        console.log(y);
+        //let z = x.concat(y);//두문자열을 연결
+        //let z = x.indexOf("hello");//문자열에서 값이 처음나타나는 위치 반환 값이 없으면 -1 반환 대소문자구분된다.
+        //let z = x.indexOf("l");
+        //let z = x.lastIndexOf("l");//문자열에서 지정된 값이 마지막으로 나타나는 인덱스(위치)를 반환 값이 없으면 -1 반환 대소문자구분된다.
+        //let z = x.length;
+        //let z = x.padStart(6, "a");//지정된 길이가 될때까지 지정된문자열로 채워줌
+        //let z = x.padEnd(10,"a");
+        //let z = x.repeat(3); //지정된값으로 복사본생성
+       //let z = x.replace("hello","world");
+       //let z = x.search("h");
+       //let z = x.slice(1,3);//지정된문자열의 앞에서부터 0으로 시작
+       //let z = x.slice(-3,-2);//지정된문자열의 끝에서부터 1부터시작
+       //let str = "aaa bb cc ddd";
+       //let z = str.split(" ");//지정된 문자로 분할-->새배열로 반환
+       let str = "aaa,bb,cc,ddd";
+       let z = str.split(",");
+       //let str1 = z.join("*");
+       //z.pop();
+       //z.push("new");
+       //z.shift();
+       //z.unshift("new");
+       //z.splice(1,0,"new");
+       //z.splice(1,1,"new","add");
+       let str2 = z.slice(2);//cc ddd
+       let str3 = z.slice(1,2);//bb
+       let str4 = str2.concat(str3);
+       str4.sort().reverse();
+       let txt = "Hello world";
+       //let txt1 = txt.substr(0);//지정된 인덱스번호에서 지정된 값(개수)으로 문자열을 추출
+       //let txt1 = txt.substr(0,3);
+       //let txt1 = txt.substr(-3,2);
+       //let txt1 = txt.substring(0);
+       //let txt1 = txt.substring(0,3);
+       //let txt1 = txt.substring(-1);//start가 0보다 작으면 인덱스 0부터 시작
+       //let txt1 = txt.toLowerCase();
+       //let txt1 = txt.toUpperCase();
+       
+       //let txt1 = t.trim();
+        //console.log(txt1);
+        
+    </script>
+</head>
+<body>
+    <pre><p id="demo1"></p></pre>
+    <pre><p id="demo2"></p></pre>
+    <script>
+        let t = "          Hello world            ";
+        //let result = t.trim();
+        //let result = t.trimStart();
+        let result = t.trimEnd();
+        document.getElementById("demo1").innerHTML = t;
+        document.getElementById("demo2").innerHTML = result;
+    </script>
+</body>
+</html>

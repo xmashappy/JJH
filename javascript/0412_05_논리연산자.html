@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리연산자</title>
+        
+</head>
+<body>
+    <button onclick="myfnc()">Try it</button>
+    <script>
+        document.title = "4월 12일 연산자";
+       let a = 5
+       let b = 10;
+       let c = 20;
+       let d = 30;
+       document.write("a > b 그리고 c < d : " , a > b && c < d , "<br>");
+       document.write("a > b 또는 c < d : " , a > b || c < d , "<br>");
+       document.write("a > b 또는 c < d : " , !(a > b || c < d) , "<br>");
+       //alert("안녕하세요");
+       alert(document.title);
+       let answer = confirm("javascript 재미있습니까?");
+       let result = answer ? "재미있습니다" : "재미없습니다";
+       document.write(result + "<br>");
+       function myfnc() {
+        alert(document.title);
+       }
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo {
+            color: blue;
+        }
+    </style>
+    <script>
+      document.title = "자바스크립트";  
+      function fnc() {
+        /* document.getElementById("demo").innerHTML = "변경후";
+        document.getElementById("demo").style.color = "red"; */
+        /* document.getElementsByClassName("example")[1].innerHTML = "변경후"; */
+        document.getElementsByTagName("p")[0].innerHTML = "변경후";
+        let x = document.getElementsByName("fname");
+        console.log(x);
+        document.querySelectorAll(".example").innerHTML = "변경후";
+      }
+      
+    </script>
+</head>
+<body>
+    <p id="demo" name="fname">변경전</p>
+    <p class="example">변경전</p>
+    <p class="example">변경전</p>
+    <p>First Name: <input name="fname" type="text" value="Michael"></p>
+    <p>First Name: <input name="fname" type="text" value="Doug"></p>
+    <button type="button" onclick="fnc()">Try it</button>
+</body>
+</html>

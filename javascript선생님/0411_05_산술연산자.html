@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        let x = 10;
+        let y = 20;
+        let z = x + y;
+        //document.write("x + y : "+ (x+y)+"<br>");
+        document.write("x + y : "+ z +"<br>");
+        z = z - y;
+        z++;//z += 1;//z = z + 1;
+        //document.write("x - y : "+ (x-y)+"<br>");
+        document.write("x + y : "+ z +"<br>");
+        document.write("x * y : "+ (x*y)+"<br>");
+        document.write("x / y : "+ (x/y)+"<br>");
+        document.write("x % y : "+ (x%y)+"<br>");
+        document.write("x ** y : "+ (x**y)+"<br>");
+        let num = 1;
+        //num++; // num = num + 1; num += 1
+        document.write("num : ", num++,"<br>");//후위연산
+        document.write("num : ", num,"<br>")
+        let num2 = 1;
+        //++num2; 
+        document.write("num2 : ", ++num2,"<br>");//전위연산
+        document.write("num : ", num2,"<br>")
+    </script>
+</body>
+</html>

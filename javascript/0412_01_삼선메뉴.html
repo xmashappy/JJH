@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        ul.container {
+            cursor: pointer;
+        }
+        ul.container li {
+            width: 35px;
+            height: 5px;
+            background: #333;
+            margin: 5px 0;
+            transition: transform 0.5s;
+        }
+        ul.active .bar1 {
+            transform: translate(0, 10px) rotate(-45deg);
+        }
+        ul.active .bar2 {
+            opacity: 0;
+        }
+        ul.active .bar3 {
+            transform: translate(0, -10px) rotate(45deg);
+        }
+    </style>
+    <script>
+        function myfnc() {
+          /* let menu = document.getElementsByClassName("container")[0]; 
+          menu.classList.toggle("active");  */
+          document.getElementsByClassName("container")[0].classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+    <ul class="container" onclick="myfnc()">
+        <li class="bar1"></li>
+        <li class="bar2"></li>
+        <li class="bar3"></li>
+    </ul>
+</body>
+</html>

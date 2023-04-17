@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- <p id="demo">문단태그입니다.</p> -->
+    <p class="demo">1문단태그입니다.</p>
+    <p class="demo">2문단태그입니다.</p>
+    <p class="demo">3문단태그입니다.</p>
+    <p class="demo">4문단태그입니다.</p>
+    <button type="button" onclick="ha()">클릭</button>
+    <script>
+        //function ha() {
+         // document.getElementById("demo").innerHTML = "변경하였습니다";
+         //document.getElementsByClassName("demo")[0].innerHTML = "변경하였습니다";
+         //document.getElementsByTagName("button")[0].innerHTML = "Try";
+         //document.querySelector(".demo").innerHTML = "변경하였습니다";
+         //document.querySelector(".demo").style.color = "red";
+         let x = document.querySelectorAll(".demo");
+         console.log(x);
+         x[1].style.color = "#f00";
+       // }
+    </script>
+</body>
+</html>

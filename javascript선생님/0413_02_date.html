@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+        function myclock() {
+           let now = new Date();
+           let hour = now.getHours(); 
+           let minute = now.getMinutes(); 
+           let second = now.getSeconds();
+           let time = hour.toString().padStart(2,"0") + ":"+ minute.toString().padStart(2,"0")+ ":" +second.toString().padStart(2,"0");
+           //document.write(typeof hour); 
+           document.getElementById("clock").innerHTML = time;
+        }
+        /* setInterval(function(){
+            myclock(); 
+        },1000); */
+        setInterval(myclock,1000);//지정된시간(밀리초)동안에 함수를 계속 실행
+        //setTimeout(myclock,1000);//지정된시간(밀리초)동안에 함수를 한번만 실행
+    </script>
+</head>
+<body>
+    <div id="clock"></div>
+    <!-- <button onclick="myclock()">클릭</button> -->
+    <!-- <script>
+        let x = 5;
+        let y = x.toString().padStart(4, "0");
+        document.write(y);
+        //padStart()메소드 지정된길이로 지정한 문자열로 채워줌
+    </script> -->
+</body>
+</html>

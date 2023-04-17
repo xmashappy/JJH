@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p>문단태그입니다.</p>
+    <button onclick="show()">태그 보이기</button>
+    <button onclick="hide()">태그 숨기기</button>
+    <script>
+        let str = document.getElementsByTagName("p")[0];
+        function hide() {
+            str.style.display = "none";
+        }
+        function show() {
+            str.style.display = "block";
+        }
+    </script>
+</body>
+</html>
